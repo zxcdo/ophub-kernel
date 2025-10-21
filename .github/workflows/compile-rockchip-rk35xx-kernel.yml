@@ -13,9 +13,10 @@ on:
       kernel_source:
         description: "Select the kernel source"
         required: false
-        default: "unifreq/linux-5.10.y-rk35xx"
+        default: "zxcdo/linux-6.1.y-rockchip"
         type: choice
         options:
+          - zxcdo/linux-6.1.y-rockchip
           - unifreq/linux-5.10.y-rk35xx
           - unifreq/linux-6.1.y-rockchip
           - codesnas/linux-5.10.y-rk35xx
@@ -190,7 +191,7 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           body: |
             - The kernel can be used to compile Armbian and OpenWrt.
-            - The kernel source code comes from: unifreq/linux-5.10.y-rk35xx
+            - The kernel source code comes from: zxcdo/linux-6.1.y-rockchip
             - The kernel compilation toolchain: gcc
             - This is a dedicated kernel for `Rockchip rk3528/rk3566/rk3568` and is not compatible with other series.
             - 这是 `Rockchip rk3528/rk3566/rk3568` 专用内核，和其他系列不通用。
