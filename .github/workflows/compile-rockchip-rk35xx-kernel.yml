@@ -75,7 +75,7 @@ on:
       kernel_sign:
         description: "Set the kernel custom signature"
         required: false
-        default: "-rk35xx-ophub"
+        default: "-tspi-lgw-zxcdo"
         type: choice
         options:
           - -rk35xx-ophub
@@ -88,7 +88,7 @@ on:
           - -summer-growing
           - -autumn-harvesting
           - -winter-storing
-          - -yourname
+          - -tspi-lgw-zxcdo
       kernel_config:
         description: "Set the path of kernel .config"
         required: false
